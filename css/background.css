@@ -1,0 +1,243 @@
+
+/* reset margins */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li,
+blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, section, summary, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* END reset margins */
+
+#mobileOnly {
+	display: none;
+}
+
+html {
+	background-color: black;
+	z-index: -2000;
+}
+
+.backgroundPage {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1000;
+}
+
+#bigLogo {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0);
+	top: 6.5em;
+	vertical-align: middle;
+}
+
+h1, nav, footer {
+	color: white;
+}
+
+/*
+#pageWrap {
+	width: 100%;
+	margin: 0 auto;
+	font-family: Arial;
+}
+*/
+
+body {
+	font-family: Arial;
+}
+
+/* Used for seeing border around some items */
+/*
+h1, nav, footer {
+	border: 1px solid white;
+}
+*/
+
+header {
+	width: 100%;
+	margin: 0 auto;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+li {
+	display: inline;
+	font-size: .8em;
+	padding: 0 3px;
+}
+
+h1 {
+/*	width: 700px; */
+	margin: 4px auto 30px;
+	text-align: center;
+	font-size: 1.35em;
+  /*  font-family: 'IM Fell DW Pica SC', serif; */
+  font-weight: bold;
+  font-family: 'Rokkitt'; 
+	padding: 20px 15px 0px;
+
+}
+
+#companyName:link {
+	border: 0px solid rgba(253, 180, 98, 0);
+	border-radius: 0px;
+}
+
+#companyName:hover {
+	background-color: rgba(199, 172, 133, 0);
+	border: 0px solid white;
+	border-radius: 0px;
+}
+
+nav {
+/*	width: 400px; */
+	margin: -25px auto 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	padding: 2px 4px;
+}
+
+.noHover {
+	border: 2px solid rgba(254, 253, 217, 0);
+	border-radius: 4px;
+	background-color: rgba(254, 253, 217, 0);
+
+}
+
+.hover {
+	background-color: rgba(0, 0, 0, 1);
+	border: 2px solid black;
+	border-radius: 4px;
+	color: rgb(240, 234, 218);
+
+}
+
+
+
+footer {
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	height: 30px;
+	width: 100%;	
+	text-align: center;
+	font-size: .95em;
+	letter-spacing: 2px;
+
+}
+
+
+#footerLink:link {
+	border: 0px solid rgba(253, 180, 98, 0);
+	border-radius: 0px;
+  -webkit-transition: color .2s ease-out;
+  -moz-transition: color .2s ease-out;
+  -o-transition: color .2s ease-out;
+  transition: color .2s ease-out; 
+}
+
+#footerLink:hover {
+	background-color: rgba(199, 172, 133, 0);
+	border: 0px solid white;
+	border-radius: 0px;
+  color: white;
+}
+
+
+@media only screen and (max-device-width: 880px) {
+	
+	#mobileOnly {
+		display: inline;
+	}
+	
+	#bigLogo {
+		display: none;
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+	li {
+		font-size: 2.8em;
+		padding: 0 1.2em;
+	}
+  
+	#mobileLogo {
+		position: relative;
+		width: 100%;
+		height: auto;
+		background-color: rgba(255, 255, 255, 0);
+		top: 12em;
+		vertical-align: middle;
+	}
+
+
+	footer {
+		display: none;
+		font-size: 2.4em;
+		position: relative;
+		clear: both;
+	}
+
+
+	nav	{
+		margin-top: 10px;
+	}
+	span {
+		padding: 3em .5em 0em;
+	}
+}
+
+
+
+
+#slide1_container {
+  padding-top: 22px;
+  width:100%;
+  height:100%;
+  overflow:hidden; /* So the sliding bit doesn't stick out. */
+  margin:40px auto;
+}
+#slide1_images {
+  /* This is the bit that moves. It has 4 images, so 4 * 450 = 1800. You could use javascript
+  to work this out instead by counting images. */
+  width:5388px;
+
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+}
+#slide1_images img {
+  padding:0;
+  margin:0;
+  float:left; /* All the images are in a row next to each other. */
+}
+
+p#slide1_controls {
+  text-align:center;
+}
+
+#slide1_controls span {
+  padding-right:2em;
+  cursor:pointer;
+  color: white;
+}

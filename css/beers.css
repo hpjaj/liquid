@@ -1,0 +1,183 @@
+#mobileOnly {
+	display: none;
+}
+
+#beerStrip {
+	position: relative;
+	width: 100%;
+	height: 265px;
+	background-color: rgba(0, 0, 0, .8);
+	top: 150px;
+	vertical-align: middle;
+	color: rgb(240, 234, 218);
+}
+
+/*
+#centerTheStrip, #beerName, #beerDescription, #beerData, .arrows {
+	border: 1px solid red;
+}
+*/
+
+#centerTheStrip {
+	width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+#beerName, #beerDescription, #beerData {
+	display: inline-block;
+	background-color: rgba(0,0,0,0);
+	margin: 8.5% 1%;
+	vertical-align: middle;
+	font-family: Rockwell, Arial;
+}
+
+/*  For the #beerName, #beerDescription, #beerData, regarding the widths: for totally even spacing 
+set the widths all to 27.33%.  But that only works if the #beerName is not too long.  If it is
+long, you'll have to play with the width until you reach good spacing.  For Patersbier beer, I 
+had to do 44.33, 25.33, 12.33, respectively.   */
+#beerName {
+	font-size: 50px;
+	font-weight: bold;
+	width: 33.33%;
+	text-align: center;
+	color: rgb(239, 62, 54);
+}
+
+#beerDescription {
+	font-size: 16px;
+	height: 80px;
+/*	font-weight: bold;  */
+	margin-top: 9.5%; 
+	width: 29.33%;
+	color: white;
+}
+
+#beerData {
+	width: 14%;
+	margin-left: 3%;
+	color: rgb(42, 178, 192);
+}
+
+.beerCharacteristic {
+	font-family: Arial Black, Arial; 
+	font-size: 1em;
+}
+
+.beerFigures {
+	font-family: Arial; 
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.arrows {
+	display: inline-block;
+	background-color: rgba(0,0,0,0);
+	vertical-align: middle;	
+}
+/*
+#rightArrow {
+	margin-right: -100px;
+}
+/*
+#leftArrow {
+margin-left: -100px;
+}
+*/
+#leftArrow:hover {
+	background: url('../images/leftGrungeArrow.png') no-repeat;
+	z-index: 100;
+}
+
+#rightArrow:hover {
+	background: url('../images/rightGrungeArrow.png') no-repeat;
+	z-index: 100;
+}
+hr {
+	display: none;
+}
+
+
+
+
+@media only screen and (max-device-width: 880px) {
+	#mobileOnly {
+		display: inline;
+	}
+
+	#blackLine {
+		padding-left: 9em;
+	}
+
+	#beerStrip {
+		display: none;
+	}	
+
+	#beerStripM {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .8);
+		top: 4em;
+		vertical-align: middle;
+	}
+
+	#centerTheStripM {
+		width: auto;
+		margin: 0 auto;
+	}
+
+	#beerNameM, #beerDescriptionM, #beerDataM {
+		display: block;
+		background-color: rgba(0,0,0,0);
+		margin: 8.5% 0;
+		width: auto;
+		vertical-align: middle;
+
+	}
+
+	#beerNameM {
+	font-family: Arial;
+	font-size: 9em;
+	font-weight: bold;
+	padding-left: -5em;
+	text-align: center;
+	color: rgb(239, 62, 54);
+	}
+
+	#beerDescriptionM {
+		font-family: Arial;
+		font-size: 3em;
+	/*	font-weight: bold;*/
+		text-align: center;
+		padding: 0 5%;
+		color: white;
+	}
+
+	.beerCharacteristicM {
+		font-family: Arial Black, Arial;
+		font-size: 4.5em;
+		font-weight: bold;
+		color: rgb(42, 178, 192);
+
+
+	}
+
+	hr {
+		display: inline;
+	}
+
+	.beerFiguresM {
+		font-family: Arial;
+		font-size: 4em;
+		font-weight: bold;
+		color: rgb(42, 178, 192);
+	}
+	
+
+	#beerDataM {
+		text-align: center;
+	}
+
+
+}
