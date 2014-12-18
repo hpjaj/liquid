@@ -2,7 +2,7 @@
 
 While attending the University of Denver, I designed and built this website for a friend’s brewery.
 
-You can visit my online portfolio live at: http://hpjaj.com/liquid/
+You can visit the site live at: http://hpjaj.com/liquid/
 
 Here is the **Home** page:
 
